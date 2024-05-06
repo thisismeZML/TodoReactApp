@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary-clr font-custom;
+}
+
+.custom-list-circle li::before {
+  content: "";
+  display: inline-block;
+  width: 0.75em; /* Adjust the width to increase the size of the circle */
+  height: 0.75em; /* Adjust the height to increase the size of the circle */
+  border-radius: 50%; /* Create a circle shape */
+  margin-right: 0.5em; /* Add some space between the bullet and the text */
+  border: 1px solid blue;
+}
+
+.shadow-inset-white:checked {
+  box-shadow: inset 0 0 0 3px white;
+}
